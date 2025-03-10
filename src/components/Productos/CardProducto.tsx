@@ -16,7 +16,14 @@ export const entryProd = {
         }
     },
 }
-export default function CardProducto({image,name, price, desc, mark}){
+interface CardProductoProps {
+  image: string;
+  name: string;
+  price: number;
+  desc: string;
+  mark: string;
+}
+export default function CardProducto({image,name, price, desc, mark}:CardProductoProps){
     return(
         <motion.div className="flex flex-col bg-gray-100 w-[250px] h-[500px] p-6 rounded-2xl" variants={entryProd} initial="offscreen"
         whileInView="onscreen"
