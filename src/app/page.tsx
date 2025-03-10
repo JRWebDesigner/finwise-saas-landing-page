@@ -1,44 +1,30 @@
-import Hero from "@/components/Hero";
-import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing/Pricing";
-import FAQ from "@/components/FAQ";
-import Logos from "@/components/Logos";
-import Benefits from "@/components/Benefits/Benefits";
+import Hero from "@/components/Hero/Hero";
 import Container from "@/components/Container";
-import Section from "@/components/Section";
-import Stats from "@/components/Stats";
-import CTA from "@/components/CTA";
-
+import Title from "@/components/Title";
+import Suministracion from "@/components/Suministracion";
+import Productos from "@/components/Productos/Productos";
+import CardContac from '@/components/CardContac'
 const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
-      <Logos />
+      <Title />
+      <hr className="border-2 border-primary w-[80%] mx-auto my-8"/>
+      <div className='text-center text-[18px] w-[80%] mx-auto'>
+        <p>
+        Estamos dedicados íntegramente a la comercialización de instrumental científico y analítico.
+        <br />
+      Contamos con el soporte de Fabricantes de prestigio Mundial. <br />
+  Podemos enviarles los equipos directamente desde las fábricas, ofrecerles la capacitación y entrenamiento según las especialidades ofrecidas.
+        </p>
+      </div>
       <Container>
-        <Benefits />
-
-        <Section
-          id="pricing"
-          title="Pricing"
-          description="Simple, transparent pricing. No surprises."
-        >
-          <Pricing />
-        </Section>
-
-        <Section
-          id="testimonials"
-          title="What Our Clients Say"
-          description="Hear from those who have partnered with us."
-        >
-          <Testimonials />
-        </Section>
-
-        <FAQ />
-
-        <Stats />
-        
-        <CTA />
-      </Container>
+        <Suministracion />
+      
+        <hr className="border-2 border-primary w-[80%] mx-auto my-8"/>
+        <Productos />
+      </Container> 
+        <CardContac />
     </>
   );
 };

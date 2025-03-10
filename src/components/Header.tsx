@@ -4,7 +4,6 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
-import { FaFingerprint } from 'react-icons/fa';
 
 import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
@@ -21,9 +20,8 @@ const Header: React.FC = () => {
         <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
             <Container className="!px-0">
                 <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
-                    {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="text-foreground min-w-fit w-7 h-7" />
+                        <img width={70} height={70} src="/images/logo.jpg" alt="logo bisupploy" />
                         <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
                             {siteDetails.siteName}
                         </span>
@@ -38,15 +36,10 @@ const Header: React.FC = () => {
                                 </Link>
                             </li>
                         ))}
-                        <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                Download
-                            </Link>
-                        </li>
                     </ul>
 
                     {/* Mobile Menu Button */}
-                    <div className="md:hidden flex items-center">
+                    <div className=" md:hidden flex items-center">
                         <button
                             onClick={toggleMenu}
                             type="button"
@@ -55,9 +48,9 @@ const Header: React.FC = () => {
                             aria-expanded={isOpen}
                         >
                             {isOpen ? (
-                                <HiOutlineXMark className="h-6 w-6" aria-hidden="true" />
+                                <HiOutlineXMark className="h-6 w-6 text-white " aria-hidden="true" />
                             ) : (
-                                <HiBars3 className="h-6 w-6" aria-hidden="true" />
+                                <HiBars3 className="h-6 w-6 text-white" aria-hidden="true" />
                             )}
                             <span className="sr-only">Toggle navigation</span>
                         </button>
@@ -84,11 +77,6 @@ const Header: React.FC = () => {
                                 </Link>
                             </li>
                         ))}
-                        <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
-                                Get Started
-                            </Link>
-                        </li>
                     </ul>
                 </div>
             </Transition>
