@@ -40,7 +40,7 @@ const ContactPage: React.FC = () => {
                     </div>
                     <div>
                         <label htmlFor="message" className="block text-sm font-medium text-gray-700">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí" className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        <textarea id="message" name="message" rows={5} placeholder="Escribe tu mensaje aquí" className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                     </div>
                     <button type="submit" className="bg-primary text-white py-3 px-6 rounded-lg w-full hover:bg-blue-700 transition">
                         Enviar Mensaje
