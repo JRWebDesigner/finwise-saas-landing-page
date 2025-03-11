@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
     <>
       <Hero />
       <Title />
-      <hr className="border-2 border-primary w-[80%] mx-auto my-8"/>
+      <hr className="border-2 border-[#fd5756] w-[80%] mx-auto my-8"/>
       <div className='text-center text-[18px] w-[80%] mx-auto'>
         <p>
         Estamos dedicados íntegramente a la comercialización de instrumental científico y analítico.
@@ -21,7 +21,7 @@ const HomePage: React.FC = () => {
       <Container>
         <Suministracion />
       
-        <hr className="border-2 border-primary w-[80%] mx-auto my-8"/>
+        <hr className="border-2 border-[#fd5756] w-[80%] mx-auto my-8"/>
         <Productos />
       </Container> 
         <CardContac />

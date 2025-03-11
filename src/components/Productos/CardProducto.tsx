@@ -25,16 +25,16 @@ interface CardProductoProps {
 }
 export default function CardProducto({image,name, price, desc, mark}:CardProductoProps){
     return(
-        <motion.div className="flex flex-col bg-gray-100 w-[250px] h-[500px] p-6 rounded-2xl" variants={entryProd} initial="offscreen"
+        <motion.div className="flex flex-col bg-gray-100 w-[250px] h-[380px] p-6 rounded-2xl shadow-md hover:bg-primary hover:text-white hover:scale-110 duration-300" variants={entryProd} initial="offscreen"
         whileInView="onscreen"
       	viewport={{ once: true }}
         >
-            <img className='max-h-[300px]' src={image} alt={name} />
+            <img className='max-h-[230px]' src={image} alt={name} />
             <div className="flex justify-between font-bold text-xl ">
                 <h3>{name}</h3>
                 <span>{price}Bs.</span>
             </div>
-            <span className="flex items-center text-lg">{mark}</span>
+            <span className="flex justify-center items-center text-sm">{mark}</span>
             <p className="text-justify text-sm">{desc}</p>
         </motion.div>
     )

@@ -24,16 +24,14 @@ export default function HeroCarrusel(){
               spaceBetween={50}
               loop={true}
               slidesPerView={1}
-              className="w-[90%] text-xl md:text-3xl text-center font-bold flex justify-center items-center "
+              className="w-[90%] text-xl md:text-3xl text-white text-center font-semibold flex justify-center items-center"
             >
           <SwiperSlide>
             <div  className="flex justify-around items-center flex-col-reverse md:flex-row gap-5">
-            <span>
+              <span>
                 La tecnología más avanzada en equipos y herramientas para tu laboratorio.
               </span>
-              <div className="p-5 w-[60%] md:w-[20%] flex justify-center bg-primary rounded-full">
-                <img className='w-[80%]' src="/images/miicroscopio.png" alt="microscopio" />
-              </div>
+              <img className='w-[24%]' src="/images/miicroscopio.png" alt="microscopio" />
             </div>
           </SwiperSlide>
           <SwiperSlide >
@@ -41,19 +39,15 @@ export default function HeroCarrusel(){
             <span>
               Instrumentos y dispositivos de las marcas más reconocidas y confiables.
             </span>
-            <div className="p-5 w-[60%] md:w-[20%] flex justify-center bg-blue-700 rounded-full">
-                <img className='w-[80%]' src="/images/miicroscopio.png" alt="microscopio" />
-              </div>
+                <img className='w-[24%]' src="/images/miicroscopio.png" alt="microscopio" />
             </div>
           </SwiperSlide>
           <SwiperSlide >
             <div className="flex justify-around items-center flex-col-reverse md:flex-row gap-5">
             <span>
-            Todo lo esencial para tu laboratorio, disponible en un único sitio.
+              Todo lo esencial para tu laboratorio, disponible en un único sitio.
             </span>
-            <div className="p-5 w-[60%] md:w-[20%] flex justify-center bg-primary rounded-full">
-                <img className='w-[80%]' src="/images/miicroscopio.png" alt="microscopio" />
-              </div>
+                <img className='w-[24%]' src="/images/miicroscopio.png" alt="microscopio" />
             </div>
           </SwiperSlide>
         </Swiper>

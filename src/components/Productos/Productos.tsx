@@ -28,15 +28,29 @@ export default function Productos(){
       	    viewport={{ once: true }}
         >
             <h2>
-                Nuestro Productos
+                Nuestros productos destacados
             </h2>
         </motion.div>
-        <div className='flex justify-center items-center gap-10'>
+        <div className='flex justify-start md:justify-center items-center gap-10 my-10 w-[90%] overflow-x-auto overflow-y-hidden'>
             <CardProducto 
                 image={'./images/miicroscopio.png'}
                 name={'Prueba producto'}
                 price={30}
-                mark={'marca fic'}
+                mark={'marca uno'}
+                desc={'lorem'}
+            />
+            <CardProducto 
+                image={'./images/miicroscopio.png'}
+                name={'Prueba producto'}
+                price={230}
+                mark={'marca dos'}
+                desc={'lorem'}
+            />
+            <CardProducto 
+                image={'./images/miicroscopio.png'}
+                name={'Prueba producto'}
+                price={330}
+                mark={'marca tres'}
                 desc={'lorem'}
             />
         </div>
