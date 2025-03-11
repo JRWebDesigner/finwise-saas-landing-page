@@ -31,7 +31,7 @@ export default function Productos(){
                 Nuestros productos destacados
             </h2>
         </motion.div>
-        <div className='flex justify-start md:justify-center items-center gap-10 my-10 w-[90%] overflow-x-auto overflow-y-hidden'>
+        <div className='flex justify-start md:justify-center items-center gap-10 my-10 w-[90%] mx-auto overflow-x-auto overflow-y-hidden'>
             <CardProducto 
                 image={'./images/miicroscopio.png'}
                 name={'Prueba producto'}

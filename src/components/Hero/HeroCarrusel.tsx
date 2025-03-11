@@ -31,7 +31,7 @@ export default function HeroCarrusel(){
               <span>
                 La tecnología más avanzada en equipos y herramientas para tu laboratorio.
               </span>
-              <img className='w-[24%]' src="/images/miicroscopio.png" alt="microscopio" />
+              <img className='w-[29%] md:w-[24%]' src="/images/miicroscopio.png" alt="microscopio" />
             </div>
           </SwiperSlide>
           <SwiperSlide >
@@ -39,7 +39,7 @@ export default function HeroCarrusel(){
             <span>
               Instrumentos y dispositivos de las marcas más reconocidas y confiables.
             </span>
-                <img className='w-[24%]' src="/images/miicroscopio.png" alt="microscopio" />
+                <img className='w-[29%] md:w-[24%]' src="/images/miicroscopio.png" alt="microscopio" />
             </div>
           </SwiperSlide>
           <SwiperSlide >
@@ -47,7 +47,7 @@ export default function HeroCarrusel(){
             <span>
               Todo lo esencial para tu laboratorio, disponible en un único sitio.
             </span>
-                <img className='w-[24%]' src="/images/miicroscopio.png" alt="microscopio" />
+                <img className='w-[29%] md:w-[24%]' src="/images/miicroscopio.png" alt="microscopio" />
             </div>
           </SwiperSlide>
         </Swiper>
