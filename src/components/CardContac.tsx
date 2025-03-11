@@ -1,6 +1,6 @@
 export default function CardContac(){
     return(
-        <div className="bg-red-700 p-10 w-full flex justify-around items-center text-red-100 font-bold text-2xl">
+        <div className="bg-red-700 p-10 w-full flex justify-around items-center text-red-100 font-bold text-lg md:text-2xl flex-wrap-reverse">
             <span>
                 Contacte ahora mismo <br /> para tener mas imformacion
             </span>
