@@ -22,7 +22,7 @@ const Header: React.FC = () => {
                 <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
                     <Link href="/" className="flex items-center gap-2">
                         <img width={70} height={70} src="/images/logo.jpg" alt="logo bisupploy" />
-                        <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
+                        <span className="manrope text-xl font-semibold text-white cursor-pointer">
                             {siteDetails.siteName}
                         </span>
                     </Link>
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
                     <ul className="hidden md:flex space-x-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
+                                <Link href={item.url} className="text-white hover:text-primary transition-colors">
                                     {item.text}
                                 </Link>
                             </li>
