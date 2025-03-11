@@ -3,10 +3,10 @@ export const siteDetails = {
     siteUrl: 'https://finwise-omega.vercel.app/',
     metadata: {
         title: 'BIOSUPPLYBOL',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+        description: 'Estamos dedicados íntegramente a la comercialización de instrumental científico y analítico. N-INNOVATIONS BIOSUPLLY BOL es una empresa de equipamiento e instalación de equipos y suministros de laboratorio',
     },
     language: 'es-ES',
     locale: 'es-ES',
-    siteLogo: `/images/logo.jpg`,
+    siteLogo: `./images/logo.jpg`,
     googleAnalyticsId: '',
 }

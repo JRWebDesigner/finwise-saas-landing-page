@@ -4,6 +4,7 @@ import Title from "@/components/Title";
 import Suministracion from "@/components/Suministracion";
 import Productos from "@/components/Productos/Productos";
 import CardContac from '@/components/CardContac'
+import Services from "@/components/Services/Services";
 const HomePage: React.FC = () => {
   return (
     <>
@@ -20,11 +21,15 @@ const HomePage: React.FC = () => {
       </div>
       <Container>
         <Suministracion />
-      
         <hr className="border-2 border-[#fd5756] w-[80%] mx-auto my-8"/>
         <Productos />
       </Container> 
-        <CardContac />
+      <CardContac />
+      <Container>
+        <Services />
+      </Container>
+
+
     </>
   );
 };
