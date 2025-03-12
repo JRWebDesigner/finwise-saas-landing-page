@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             <Container className="!px-0">
                 <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
                     <Link href="/" className="flex items-center gap-2">
-                        <img width={70} height={70} src="/images/logo.jpg" alt="logo bisupploy" />
+                        <img width={150} src="/images/logo.png" alt="logo bisupploy" />
                         <span className="manrope text-xl font-semibold text-white cursor-pointer">
                             {siteDetails.siteName}
                         </span>
