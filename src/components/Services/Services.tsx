@@ -19,7 +19,7 @@ export const subtitleAn = {
 }
 export default function Services(){
     return(
-        <section className="flex flex-row-reverse justify-between items-center my-20 w-full">
+        <section className="flex flex-wrap md:flex-no-wrap flex-row-reverse justify-between items-center my-20 w-full">
             <motion.div
                         className="text-2xl md:text-3xl font-bold text-red-800 w-[570px] text-center md:text-right"
                         variants={subtitleAn}
