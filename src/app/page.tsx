@@ -2,7 +2,6 @@
 import Hero from "@/components/Hero/Hero";
 import HeroCarrusel from '@/components/Hero/HeroCarrusel'
 import Container from "@/components/Container";
-import Title from "@/components/Title";
 import Suministracion from "@/components/Suministracion";
 import Productos from "@/components/Productos/Productos";
 import CardContac from '@/components/CardContac'
