@@ -3,7 +3,7 @@ export const siteDetails = {
     siteUrl: 'https://finwise-omega.vercel.app/',
     metadata: {
         title: 'BIOSUPPLYBOL',
-        description: 'Estamos dedicados íntegramente a la comercialización de instrumental científico y analítico. N-INNOVATIONS BIOSUPLLY BOL es una empresa de equipamiento e instalación de equipos y suministros de laboratorio',
+        description: 'Estamos dedicados íntegramente a la comercialización de instrumental científico y analítico. N-INNOVATIONS BIOSUPPLY BOL es una empresa de equipamiento e instalación de equipos y suministros de laboratorio',
     },
     language: 'es-ES',
     locale: 'es-ES',

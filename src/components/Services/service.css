@@ -1,0 +1,13 @@
+.name_service{
+    display: none;
+    transition-duration: 500ms;
+}
+.container_service{
+    transition: width 300ms ease-in-out;
+}
+.container_service:hover{
+    width: 300px;
+}
+.container_service:hover > .name_service{
+    display: flex;
+}

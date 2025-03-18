@@ -24,7 +24,7 @@ export default function HeroCarrusel(){
               spaceBetween={50}
               loop={true}
               slidesPerView={1}
-              className="w-[90%] text-xl md:text-3xl text-white text-center font-semibold flex justify-center items-center"
+              className="w-[90%] text-xl md:text-3xl text-center font-semibold flex justify-center items-center"
             >
           <SwiperSlide>
             <div  className="flex justify-around items-center flex-col-reverse md:flex-row gap-5">

@@ -1,4 +1,6 @@
+'use client'
 import Hero from "@/components/Hero/Hero";
+import HeroCarrusel from '@/components/Hero/HeroCarrusel'
 import Container from "@/components/Container";
 import Title from "@/components/Title";
 import Suministracion from "@/components/Suministracion";
@@ -9,7 +11,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
-      <Title />
+      <HeroCarrusel />
       <hr className="border-2 border-[#fd5756] w-[80%] mx-auto my-8"/>
       <div className='text-center text-[18px] w-[80%] mx-auto'>
         <p>
@@ -20,16 +22,14 @@ const HomePage: React.FC = () => {
         </p>
       </div>
       <Container>
-        <Suministracion />
+        <Services />
+      </Container>
+      <Container>
         <hr className="border-2 border-[#fd5756] w-[80%] mx-auto my-8"/>
         <Productos />
       </Container> 
       <CardContac />
-      <Container>
-        <Services />
-      </Container>
-
-
+      <Suministracion />
     </>
   );
 };

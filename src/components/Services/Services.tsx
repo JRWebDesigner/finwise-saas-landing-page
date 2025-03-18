@@ -1,7 +1,7 @@
 'use client'
 import {motion} from 'framer-motion'
 import ServicesCard from './ServicesCard'
-
+import './service.css'
 export const subtitleAn = {
     offscreen: {
         opacity: 0,
@@ -19,34 +19,50 @@ export const subtitleAn = {
 }
 export default function Services(){
     return(
-        <section className="flex flex-col justify-center items-center my-20 w-full">
+        <section className="flex flex-row-reverse justify-between items-center my-20 w-full">
             <motion.div
-                        className="text-center text-3xl font-bold "
+                        className="text-2xl md:text-3xl font-bold text-red-800 w-[570px] text-center md:text-right"
                         variants={subtitleAn}
                         initial="offscreen"
                         whileInView="onscreen"
                         viewport={{ once: true }}
             >
                 <h2>
-                    Servicios que ofrecemos en BIOSUPPLYBOL:
+                    En BIOSUPPLYBOL estamos especialisados <br /> en las siguientes secciones
                 </h2>
             </motion.div>
-            <div className='flex justify-center items-center flex-wrap'>
+            <div className='flex justify-center items-center w-[710px]'>
                 <ServicesCard 
-                    imagen='/images/laboratorio.webp'
-                    name='Venta de Equipos de Laboratorio'
+                    imagen='https://interprise.com.br/wp-content/uploads/2023/10/Farmaceutico-01.webp'
+                    name='Farmacéutico'
                 />
                 <ServicesCard 
-                    imagen='/images/tecnicos.webp'
-                    name='Instalacion y Puestas en Marcha'
+                    imagen='https://interprise.com.br/wp-content/uploads/2023/10/Expertise-compromisso-01.webp'
+                    name='Universidades y Centros de Investigación'
                 />
                 <ServicesCard 
-                    imagen='/images/mantenimiento.webp'
-                    name='Mantenimiento y Reparacion'
+                    imagen='https://interprise.com.br/wp-content/uploads/2023/10/segmento-ambiental.webp'
+                    name='Análisis Ambientales'
                 />
                 <ServicesCard 
-                    imagen='/images/suministro.webp'
-                    name='Suministros Cientificos'
+                    imagen='https://interprise.com.br/wp-content/uploads/2023/10/segmento-industria-quimica.webp'
+                    name='Industria Química'
+                />
+                 <ServicesCard 
+                    imagen='https://interprise.com.br/wp-content/uploads/2023/10/segmento-agraonegocio-II.webp'
+                    name='Agronegocios'
+                />
+                 <ServicesCard 
+                    imagen='https://interprise.com.br/wp-content/uploads/2023/10/Expertise-compromisso-02.webp'
+                    name='Medicina y Diagnóstico'
+                />
+                 <ServicesCard 
+                    imagen='https://interprise.com.br/wp-content/uploads/2023/10/segmento-comesticos.webp'
+                    name='Cosmético'
+                />
+                 <ServicesCard 
+                    imagen='https://interprise.com.br/wp-content/uploads/2023/10/segmento-alimentos-bebidas.webp'
+                    name='Alimentos y Bebidas'
                 />
             </div>
         </section>
