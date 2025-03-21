@@ -45,9 +45,8 @@ export default function CardProducto({ image, name, price, desc, mark }: CardPro
                 onClick={toggleModal} // Abre el modal al hacer clic en la tarjeta
             >
                 <img className="max-h-[230px]" src={image} alt={name} />
-                <div className="flex justify-between font-bold text-xl">
+                <div className="flex justify-center font-bold text-xl">
                     <h3>{name}</h3>
-                    <span>{price} Bs.</span>
                 </div>
                 <span className="flex justify-center items-center text-sm">{mark}</span>
                 <p className="text-justify text-sm">{desc}</p>
@@ -69,8 +68,7 @@ export default function CardProducto({ image, name, price, desc, mark }: CardPro
                         <img className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] object-cover rounded-md mb-4" src={image} alt={name} />
                         <div className='flex-center flex-col md:pl-4'>
                             <div className='flex-around w-full md:w-[600px]'>
-                                <h2 className="text-2xl font-bold mb-2">{name}</h2>
-                                <span className="text-lg font-semibold">{price} Bs.</span>
+                                <h2 className="text-2xl md:text-4xl font-bold mb-2">{name}</h2>
                             </div>
                             <div className="flex-center w-full">
                                 <span className="text-sm text-gray-500">{mark}</span>

@@ -21,7 +21,7 @@ interface PropsService{
 }
 export default function ServiceCard({imagen, name}:PropsService){
     return(
-      <motion.div className='container_service relative flex justify-center items-end w-[90px] h-[580px] bg-cover bg-center duration-300'
+      <motion.div className='container_service relative flex justify-center items-end w-[45px] md:w-[90px] h-[580px] bg-cover bg-center duration-300'
 	  style={{backgroundImage:`url(${imagen})`}}
 	  variants={entryCard}
 	  initial="offscreen"
