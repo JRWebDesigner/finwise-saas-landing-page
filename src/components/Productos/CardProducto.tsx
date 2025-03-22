@@ -21,12 +21,11 @@ export const entryProd = {
 interface CardProductoProps {
     image: string;
     name: string;
-    price: number;
     desc: string;
     mark: string;
 }
 
-export default function CardProducto({ image, name, price, desc, mark }: CardProductoProps) {
+export default function CardProducto({ image, name, desc, mark }: CardProductoProps) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const toggleModal = () => {
