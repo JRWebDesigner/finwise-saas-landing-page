@@ -22,8 +22,8 @@ export const footerDetails: {
             url: "/sobre-nosotros"
         }
     ],
-    email: 'address@yoursite.com',
-    telephone: '+591 77777777',
+    email: 'info@n-innovationbiosupply.com',
+    telephone: '+591 77793456',
     socials: {
         // github: 'https://github.com',
         // x: 'https://twitter.com/x',

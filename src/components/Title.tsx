@@ -28,7 +28,7 @@ export default function Title(){
         viewport={{ once: true }}
       >
         <h1>
-          <strong>N-INNOVATIONS BIOSUPPLY BOL</strong> es una empresa de equipamiento e instalación de equipos y suministros de laboratorio
+          <strong>N-INNOVATIONS BIOSUPPLY BOL</strong> importadora de insumos de laboratorio en general
         </h1>
       </motion.div>
     )

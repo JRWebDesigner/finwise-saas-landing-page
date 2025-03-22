@@ -15,7 +15,7 @@ const ContactPage: React.FC = () => {
                     </li>
                     <li className="w-[90%]">
                         <a href="">
-                            <strong>Celular:</strong> +591 77777777
+                            <strong>Celular:</strong> +591 77793456
                         </a>
                     </li>
                     <li className="w-[90%]">
