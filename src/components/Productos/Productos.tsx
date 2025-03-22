@@ -35,21 +35,21 @@ export default function Productos(){
             <CardProducto 
                 image={'./images/miicroscopio.png'}
                 name={'Prueba producto'}
-                price={30}
+                
                 mark={'marca uno'}
                 desc={'lorem'}
             />
             <CardProducto 
                 image={'./images/miicroscopio.png'}
                 name={'Prueba producto'}
-                price={230}
+                
                 mark={'marca dos'}
                 desc={'lorem'}
             />
             <CardProducto 
                 image={'./images/miicroscopio.png'}
                 name={'Prueba producto'}
-                price={330}
+                
                 mark={'marca tres'}
                 desc={'lorem'}
             />
