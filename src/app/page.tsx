@@ -6,6 +6,7 @@ import Suministracion from "@/components/Suministracion";
 import Productos from "@/components/Productos/Productos";
 import CardContac from '@/components/CardContac'
 import Services from "@/components/Services/Services";
+import Marcas from "@/components/Marcas/Marcas";
 const HomePage: React.FC = () => {
   return (
     <>
@@ -29,6 +30,9 @@ const HomePage: React.FC = () => {
       </Container> 
       <CardContac />
       <Suministracion />
+      <Container>
+        <Marcas />
+      </Container>
     </>
   );
 };
