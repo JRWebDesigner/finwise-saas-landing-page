@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
                     <h4 className="text-lg font-semibold mb-4">Contactos</h4>
 
                     {footerDetails.email && <a href={`mailto:${footerDetails.email}`}  className="block text-white hover:text-foreground">Email: {footerDetails.email}</a>}
-
+                    {footerDetails.email2 && <a href={`mailto:${footerDetails.email2}`}  className="block text-white hover:text-foreground">Email: {footerDetails.email2}</a>}
                     {footerDetails.telephone && <a href={`tel:${footerDetails.telephone}`} className="block text-white hover:text-foreground">Celular: {footerDetails.telephone}</a>}
 
                     {footerDetails.socials && (

@@ -4,6 +4,7 @@ export const footerDetails: {
     subheading: string;
     quickLinks: IMenuItem[];
     email: string;
+    email2: string;
     telephone: string;
     socials: ISocials;
 } = {
@@ -23,6 +24,7 @@ export const footerDetails: {
         }
     ],
     email: 'info@n-innovationbiosupply.com',
+    email2: 'innovationsbiosupply@gmail.com',
     telephone: '+591 77793456',
     socials: {
         // github: 'https://github.com',

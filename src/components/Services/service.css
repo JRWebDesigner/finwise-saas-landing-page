@@ -11,3 +11,9 @@
 .container_service:hover > .name_service{
     display: flex;
 }
+/* Estilo específico para dispositivos móviles */
+@media (max-width: 640px) { /* Pantallas pequeñas (ejemplo: móviles) */
+    .container_service:hover {
+        width: 150px; /* Limita el crecimiento a 150px en móviles */
+    }
+}

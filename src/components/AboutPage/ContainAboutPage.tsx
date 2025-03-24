@@ -32,8 +32,9 @@ export default function ContainAboutPage(){
 						</p>
 						</motion.div>
 					</section>
-					<section className="grid grid-cols-1 md:grid-cols-2 mb-10 justify-around items-center gap-5 flex-wrap">
+
 					<motion.div 
+					className="grid grid-cols-1 md:grid-cols-2 mb-10 justify-around items-center gap-5 flex-wrap" 
 							variants={entryDiv}
 							initial="offscreen"
               whileInView="onscreen"
@@ -52,7 +53,6 @@ export default function ContainAboutPage(){
 							</p>
 						</div>
 					</motion.div>
-	    </section>
         </>
     )
 }

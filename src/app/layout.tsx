@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { siteDetails } from '@/data/siteDetails';
 
 import "./globals.css";
+import Whatsapp from "@/components/Whatsapp";
 
 const manrope = Manrope({ subsets: ['latin'] });
 const sourceSans = Source_Sans_3({ subsets: ['latin'] });
@@ -51,6 +52,8 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <Whatsapp />
+
         <Footer />
       </body>
     </html>
