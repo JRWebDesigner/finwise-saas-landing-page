@@ -8,7 +8,7 @@ export const postType = defineType({
   icon: DocumentTextIcon,
   fields: [
     defineField({
-      name: 'Nombre',
+      name: 'nombre',
       type: 'string',
     }),
     defineField({
@@ -37,7 +37,7 @@ export const postType = defineType({
   ],
   preview: {
     select: {
-      title: 'Nombre',
+      title: 'nombre',
       media: 'mainImage',
     }
   },

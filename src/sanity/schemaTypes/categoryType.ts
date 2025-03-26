@@ -8,15 +8,15 @@ export const categoryType = defineType({
   icon: TagIcon,
   fields: [
     {
-    name: 'Nombre',
+    name: 'nombre',
     type: 'string',
     },
     {
-        name: 'Enlace',
+        name: 'enlace',
         type: 'slug',
-        title: 'Slug',
+        title: 'Enlace',
         options: {
-          source: 'Nombre', // Genera el slug a partir del campo `name`
+          source: 'nombre', // Genera el slug a partir del campo `name`
           maxLength: 200, // Longitud máxima del slug
         },
         validation: (Rule) => Rule.required(), // Asegura que el slug sea obligatorio
@@ -24,7 +24,7 @@ export const categoryType = defineType({
 ],
 preview: {
     select: {
-    title: 'name',
+    title: 'nombre',
     },
 },
 })

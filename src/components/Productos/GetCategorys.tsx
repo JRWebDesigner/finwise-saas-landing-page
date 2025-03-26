@@ -5,8 +5,8 @@ import { allCategoriesQuery } from '@/sanity/lib/queries';
 // Define una interfaz específica para las categorías
 interface Category {
   _id: string;
-  Nombre: string;
-  Enlace: string;
+  nombre: string;
+  enlace: string;
 }
 
 export default async function GetCategorys() {
@@ -22,8 +22,8 @@ export default async function GetCategorys() {
       </li>
       {categories.map((category) => (
         <li key={category._id}>
-          <Link href={`/productos/${category.Enlace}`}>
-            {category.Nombre}
+          <Link href={`/productos/${category.enlace}`}>
+            {category.nombre}
           </Link>
         </li>
       ))}
