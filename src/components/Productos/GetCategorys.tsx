@@ -1,17 +1,9 @@
 import Link from 'next/link';
-import { client } from '@/sanity/lib/client';
-import { allCategoriesQuery } from '@/sanity/lib/queries';
-
-// Define una interfaz específica para las categorías
-interface Category {
-  _id: string;
-  nombre: string;
-  enlace: string;
-}
+import { getCategories } from '@/sanity/lib/queries';
+import { CategoriesType } from '../../../types';
 
 export default async function GetCategorys() {
-  // Usa la consulta definida en queries.ts
-  const categories: Category[] = await client.fetch(allCategoriesQuery);
+  const categories: CategoriesType[] = await getCategories()
 
   return (
     <ul>
