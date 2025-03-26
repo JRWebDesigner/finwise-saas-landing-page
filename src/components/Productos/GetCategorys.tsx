@@ -11,10 +11,10 @@ export default async function GetCategorys() {
                     Todos
                 </Link>
             </li>
-            {categorys.map((category: { _id: string; title: string; slug: { current: string } }) => (
+            {categorys.map((category: { _id: string; Nombre: string; Enlace: { current: string } }) => (
                 <li key={category._id}>
-                    <Link href={`/productos/${category.slug.current}`}>
-                        {category.title}
+                    <Link href={`/productos/${category.Enlace.current}`}>
+                        {category.Nombre}
                     </Link>
                 </li>
             ))}
