@@ -16,13 +16,14 @@ export async function sanityFetch<QueryResponse>({
   params?: QueryParams;
   tags?: string[];
 }): Promise<QueryResponse> {
+  // Extiende QueryParams para incluir token y tag
   const fetchOptions: QueryParams & { token?: string; tag?: string } = {
     ...params,
   };
 
   // Agregar el token si está disponible
   if (token) {
-    fetchOptions.token = token; // No se necesita `as any`
+    fetchOptions.token = token as string; // Forzar a TypeScript a aceptar el tipo string
   }
 
   // Agregar las etiquetas si están disponibles
