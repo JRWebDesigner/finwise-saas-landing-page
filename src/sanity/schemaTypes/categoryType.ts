@@ -12,7 +12,7 @@ export const categoryType = defineType({
     type: 'string',
     },
     {
-        name: 'slug',
+        name: 'Enlace',
         type: 'slug',
         title: 'Slug',
         options: {
