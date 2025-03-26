@@ -20,12 +20,14 @@ export async function sanityFetch<QueryResponse>({
     ...params,
   };
 
+  // Agregar el token si está disponible
   if (token) {
-    (fetchOptions as any).token = token;
+    fetchOptions.token = token; // No se necesita `as any`
   }
 
+  // Agregar las etiquetas si están disponibles
   if (tags.length > 0) {
-    (fetchOptions as any).tag = tags.join(",");
+    fetchOptions.tag = tags.join(","); // No se necesita `as any`
   }
 
   return client.fetch(query, fetchOptions);
