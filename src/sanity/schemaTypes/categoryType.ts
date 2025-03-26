@@ -14,9 +14,12 @@ export const categoryType = defineType({
     defineField({
       name: 'Enlace',
       type: 'slug',
-      options: {
-        source: 'title',
-      },
+            title: 'Enlace',
+            options: {
+              source: 'name', // Genera el slug a partir del campo `name`
+              maxLength: 200, // Longitud máxima del slug
+            },
+            validation: (Rule) => Rule.required(), 
     }),
   ],
 })
