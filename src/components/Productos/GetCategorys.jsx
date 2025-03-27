@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import { getCategories } from '@/sanity/lib/queries';
-import { CategoriesType } from '../../../types';
+import { SanityDocument } from 'next-sanity';
+import { allCategoriesQuery} from '@/sanity/lib/queries';
+import { sanityFetch } from '@/sanity/lib/fetch';
 
 export default async function GetCategorys() {
-  const categories: CategoriesType[] = await getCategories()
-
+  const categories =await sanityFetch<SanityDocument[]>({query: allCategoriesQuery})
+  console.log(categories)
   return (
     <ul>
       <li>
