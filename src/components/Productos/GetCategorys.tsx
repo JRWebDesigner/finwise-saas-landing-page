@@ -1,13 +1,15 @@
-import Link from 'next/link';
 import { client } from '@/sanity/lib/client';
 import { allCategoriesQuery } from '@/sanity/lib/queries';
-
+import Link from 'next/link';
+interface Category {
+  _id: string;
+  nombre: string;
+  enlace: string | null; // Puede ser null si el slug no está definido
+}
 export default async function GetCategorys() {
-  // Recupera las categorías desde Sanity
-  const queries = await client.fetch(allCategoriesQuery);
-
-  console.log('Categorías recuperadas:', queries); // Depuración
-
+  
+  const categories: Category[] = await client.fetch(allCategoriesQuery);
+  console.log(categories)
   return (
     <ul>
       <li>
@@ -15,10 +17,10 @@ export default async function GetCategorys() {
           Todos
         </Link>
       </li>
-      {queries.map((queri) => (
-        <li key={queri._id}>
-          <Link href={`/productos/${queri.enlace}`}>
-            {queri.nombre}
+      {categories.map((category) => (
+        <li key={category._id}>
+          <Link href={`/productos/${category.enlace}`}>
+            {category.nombre}
           </Link>
         </li>
       ))}
