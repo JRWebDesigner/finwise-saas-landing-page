@@ -31,7 +31,9 @@ export default function Services(){
                     En BIOSUPPLYBOL estamos especialisados <br /> en las siguientes secciones
                 </h2>
             </motion.div>
-            <div className='flex justify-center items-center w-[710px]'>
+            <div className='flex flex-col md:fles-row justify-center items-center w-[710px]'>
+                <div>
+
                 <ServicesCard 
                     imagen='https://interprise.com.br/wp-content/uploads/2023/10/Farmaceutico-01.webp'
                     name='Farmacéutico'
@@ -48,6 +50,9 @@ export default function Services(){
                     imagen='https://interprise.com.br/wp-content/uploads/2023/10/segmento-industria-quimica.webp'
                     name='Industria Química'
                 />
+                 
+                 </div>
+                 <div>
                  <ServicesCard 
                     imagen='https://interprise.com.br/wp-content/uploads/2023/10/segmento-agraonegocio-II.webp'
                     name='Agronegocios'
@@ -64,6 +69,7 @@ export default function Services(){
                     imagen='https://interprise.com.br/wp-content/uploads/2023/10/segmento-alimentos-bebidas.webp'
                     name='Alimentos y Bebidas'
                 />
+                 </div>
             </div>
         </section>
     )

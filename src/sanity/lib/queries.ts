@@ -1,4 +1,5 @@
 import {groq} from 'next-sanity'
+import { client } from './client';
 
 export const allProductsQuery = groq`*[_type == "producto"] | order(_createdAt desc) {
   _id, _createdAt, nombre, "mainImage": mainImage.asset->url, categoria, descripcion
@@ -6,3 +7,16 @@ export const allProductsQuery = groq`*[_type == "producto"] | order(_createdAt d
 export const allCategoriesQuery = groq`*[_type == "category"]| order(_createdAt desc){
   _id,_createdAt, nombre, "enlace": enlace.current
 }`
+export async function getProductCategory(categorySlug: string) {
+  return client.fetch(
+    groq`*[_type == "producto" && categoria->enlace.current == $categorySlug] | order(_createdAt desc) {
+      _id, 
+      _createdAt, 
+      nombre, 
+      "mainImage": mainImage.asset->url, 
+      "categoryName": categoria->nombre,
+      descripcion
+    }`,
+    { categorySlug }
+  );
+}
