@@ -16,7 +16,7 @@ export const metadata:Metadata = {
       <div className="max-w-screen-2xl mx-auto mt-20">
         <div className="grid grid-cols-[0.2fr_2fr]">
           <div className='border-r-2 border-primary'>
-            <h2 className='text-center font-bold text-xl'>Categorias:</h2>
+            <h2 className='text-center font-bold text-xl'>Categorias</h2>
             <nav className='pl-4 duration-300 text-blue-500 underline flex-center flex-col'>
               <GetCategorys />
             </nav>
