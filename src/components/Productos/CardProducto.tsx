@@ -28,7 +28,7 @@ interface CardProductoProps {
     descripcion: PortableTextBlock[];
 }
 
-export default function CardProducto({ nombre, mainImage, marca, descripcion }: CardProductoProps) {
+export default function CardProducto({ nombre, mainImage,categoria , marca, descripcion }: CardProductoProps) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const toggleModal = () => {
