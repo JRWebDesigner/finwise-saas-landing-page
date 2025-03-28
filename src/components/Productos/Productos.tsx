@@ -33,6 +33,7 @@ export default function Productos(){
         </motion.div>
         <div className='flex justify-start md:justify-center items-center gap-10 my-10 w-[90%] mx-auto overflow-x-auto overflow-y-hidden'>
             <CardProducto 
+            categoria='s'
                 mainImage={'./images/miicroscopio.png'}
                 nombre={'Prueba producto'}
                 
@@ -40,6 +41,8 @@ export default function Productos(){
                 descripcion={[]}
             />
             <CardProducto 
+            categoria='s'
+
                 mainImage={'./images/miicroscopio.png'}
                 nombre={'Prueba producto'}
                 
@@ -47,6 +50,7 @@ export default function Productos(){
                 descripcion={[]}
             />
             <CardProducto 
+            categoria='s'
                 mainImage={'./images/miicroscopio.png'}
                 nombre={'Prueba producto'}
                 

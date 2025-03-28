@@ -22,6 +22,7 @@ export default async function ProductSlug({params}:Props){
 					{productos.map((product) => (
 						<li key={product._id}>
 							<CardProducto
+							categoria='s'
 								nombre={product.nombre}
 								mainImage={product.mainImage}
 								marca={product.marca}

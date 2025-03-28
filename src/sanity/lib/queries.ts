@@ -9,13 +9,8 @@ export const allCategoriesQuery = groq`*[_type == "category"]| order(_createdAt 
 }`
 export async function getProductCategory(categorySlug: string) {
   return client.fetch(
-    groq`*[_type == "producto" && categoria->enlace.current == $categorySlug] | order(_createdAt desc) {
-      _id, 
-      _createdAt, 
-      nombre, 
-      "mainImage": mainImage.asset->url, 
-      "categoryName": categoria->nombre,
-      descripcion
+    groq`*[_type == "producto" && categoria == $categorySlug] | order(_createdAt desc) {
+       _id, _createdAt, nombre, "mainImage": mainImage.asset->url, categoria, descripcion
     }`,
     { categorySlug }
   );

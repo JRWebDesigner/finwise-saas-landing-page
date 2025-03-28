@@ -23,7 +23,8 @@ export const entryProd = {
 interface CardProductoProps {
     nombre: string;
     mainImage: string;
-    marca: string;
+    marca: string; 
+    categoria:string;
     descripcion: PortableTextBlock[];
 }
 
@@ -47,7 +48,7 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
             >
                 <img className="max-h-[230px] object-contain" src={mainImage} alt={nombre} />
                 <div className="flex justify-center font-bold text-xl">
-                    <h3>{nombre}</h3>
+                    <h3>{nombre} - {categoria}</h3>
                 </div>
                 <span className="flex justify-center items-center text-sm">{marca}</span>
 								<button className='px-3 py-2 rounded-3xl border-2 border-white mt-2 hover:bg-secondary duration-300'>Ver mas informacion </button>
