@@ -14,9 +14,7 @@ export default async function ProductsPage(){
   const products : ProductTyoe[] = await client.fetch(allProductsQuery);
   return(
     <>
-      <h2 className="text-2xl font-bold text-center">
-        Nuestros productos
-      </h2>
+
       <ul className="flex-around flex-wrap gap-6">
         {products.map((product) => (
           <li key={product._id}>

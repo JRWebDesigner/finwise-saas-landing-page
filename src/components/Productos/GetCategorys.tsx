@@ -18,7 +18,7 @@ export default async function GetCategorys() {
         </Link>
       </li>
       {categories.map((category) => (
-        <li key={category._id}>
+        <li className='hover:text-primary duration-300' key={category._id}>
           <Link href={`/productos/${category.enlace}`}>
             {category.nombre}
           </Link>
