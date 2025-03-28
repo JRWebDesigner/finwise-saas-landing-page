@@ -32,7 +32,7 @@ export default function Services(){
                 </h2>
             </motion.div>
             <div className='flex flex-col md:fles-row justify-center items-center w-[710px]'>
-                <div>
+                <div className='flex-center'>
 
                 <ServicesCard 
                     imagen='https://interprise.com.br/wp-content/uploads/2023/10/Farmaceutico-01.webp'
@@ -52,7 +52,7 @@ export default function Services(){
                 />
                  
                  </div>
-                 <div>
+                 <div className='flex-center'>
                  <ServicesCard 
                     imagen='https://interprise.com.br/wp-content/uploads/2023/10/segmento-agraonegocio-II.webp'
                     name='Agronegocios'
