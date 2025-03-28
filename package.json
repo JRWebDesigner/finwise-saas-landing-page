@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-
     "dev": "node --max-old-space-size=4096 node_modules/.bin/next dev",
     "build": "node --max-old-space-size=4096 node_modules/.bin/next build",
     "start": "node --max-old-space-size=4096 node_modules/.bin/next start",
@@ -29,6 +28,7 @@
     "swiper": "^11.2.5"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

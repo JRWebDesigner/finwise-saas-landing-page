@@ -31,7 +31,7 @@ export default function Services(){
                     En BIOSUPPLYBOL estamos especialisados <br /> en las siguientes secciones
                 </h2>
             </motion.div>
-            <div className='flex flex-col md:fles-row justify-center items-center w-[710px]'>
+            <div className='grid grid-cols-2 md:grid-cols-1 justify-center items-center w-[710px]'>
                 <div className='flex-center'>
 
                 <ServicesCard 

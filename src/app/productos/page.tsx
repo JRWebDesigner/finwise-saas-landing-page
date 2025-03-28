@@ -15,7 +15,7 @@ export default async function ProductsPage(){
   return(
     <>
       <h2 className="text-2xl font-bold text-center">
-        todos nuestros productos
+        Nuestros productos
       </h2>
       <ul className="flex-around flex-wrap gap-6">
         {products.map((product) => (
