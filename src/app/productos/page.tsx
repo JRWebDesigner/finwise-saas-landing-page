@@ -8,7 +8,6 @@ interface ProductTyoe {
   nombre: string;
   mainImage: string;
   marca: string;
-  categoria: string;
   descripcion: PortableTextBlock[];
 }
 export default async function ProductsPage(){
@@ -22,7 +21,6 @@ export default async function ProductsPage(){
         {products.map((product) => (
           <li key={product._id}>
             <CardProducto
-            categoria={product.categoria}
               nombre={product.nombre}
               mainImage={product.mainImage}
               marca={product.marca}
