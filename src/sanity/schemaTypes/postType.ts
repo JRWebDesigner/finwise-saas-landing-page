@@ -26,6 +26,10 @@ export const postType = defineType({
       ]
     }),
     defineField({
+      name: 'marca',
+      type: 'string',
+    }),
+    defineField({
       name: 'categoria',
       type: 'array',
       of: [defineArrayMember({type: 'reference', to: {type: 'category'}})],
