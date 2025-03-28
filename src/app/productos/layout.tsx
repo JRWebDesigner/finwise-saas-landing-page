@@ -14,7 +14,7 @@ export const metadata:Metadata = {
 		<>
       <Hero />
       <div className="max-w-screen-2xl mx-auto mt-20">
-        <div className="grid grid-cols-[0.4fr_1fr]">
+        <div className="grid grid-cols-[0.2fr_2fr]">
           <div className='border-r-2 border-primary'>
             <h2 className='text-center font-bold text-xl'>Categorias:</h2>
             <nav className='pl-4 hover:text-primary duration-300 text-blue-500 underline'>
@@ -22,6 +22,9 @@ export const metadata:Metadata = {
             </nav>
           </div>
           <div className='px-5'>
+            <h2 className="text-2xl font-bold text-center">
+              Nuestros productos
+            </h2>
             {children}
           </div>
         </div>

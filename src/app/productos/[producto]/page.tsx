@@ -18,7 +18,9 @@ interface ProductType {
 export default async function ProductSlug({params}:Props){
 	const slug = params.producto
 	const productos : ProductType[] = await getProductCategory(slug)
-	return <ul className="flex-around flex-wrap gap-6">
+	return(
+		<>
+			<ul className="flex-around flex-wrap gap-6">
 					{productos.map((product) => (
 						<li key={product._id}>
 							<CardProducto
@@ -30,4 +32,6 @@ export default async function ProductSlug({params}:Props){
 						</li>
 					))}
 				</ul>
+		</>
+	)
 }
