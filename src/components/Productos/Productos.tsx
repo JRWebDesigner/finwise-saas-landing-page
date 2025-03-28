@@ -33,25 +33,25 @@ export default function Productos(){
         </motion.div>
         <div className='flex justify-start md:justify-center items-center gap-10 my-10 w-[90%] mx-auto overflow-x-auto overflow-y-hidden'>
             <CardProducto 
-                image={'./images/miicroscopio.png'}
-                name={'Prueba producto'}
+                mainImage={'./images/miicroscopio.png'}
+                nombre={'Prueba producto'}
                 
-                mark={'marca uno'}
-                desc={'lorem'}
+                marca={'marca uno'}
+                descripcion={[]}
             />
             <CardProducto 
-                image={'./images/miicroscopio.png'}
-                name={'Prueba producto'}
+                mainImage={'./images/miicroscopio.png'}
+                nombre={'Prueba producto'}
                 
-                mark={'marca dos'}
-                desc={'lorem'}
+                marca={'marca dos'}
+                descripcion={[]}
             />
             <CardProducto 
-                image={'./images/miicroscopio.png'}
-                name={'Prueba producto'}
+                mainImage={'./images/miicroscopio.png'}
+                nombre={'Prueba producto'}
                 
-                mark={'marca tres'}
-                desc={'lorem'}
+                marca={'marca tres'}
+                descripcion={[]}
             />
         </div>
         </>
