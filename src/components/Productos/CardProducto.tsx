@@ -74,10 +74,11 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                                 <h2 className="text-lg md:text-4xl font-bold mb-2">{nombre}</h2>
                             </div>
                             <div className="flex-center w-full">
-                                <span className="text-sm text-gray-500">{marca}</span>
+                                <span className="text-sm text-gray-500 text-primary">{marca}</span>
                             </div>
                             <div className='overflow-y-auto w-full max-h-[200px] md:max-h-[400px] p-4 prose prose-xl'>
-                                <PortableText value={descripcion} />
+                                <h3>Descripción:</h3>
+				<PortableText value={descripcion} />
                             </div>
                             <a className='bg-[#035AC7] p-2 rounded-3xl text-white text-bold text-lg font-bold w-[170px] flex-center hover:scale-105 duration-200' href={`https://wa.me/59168071168?text=Deseo%20el%20producto%20${nombre}`} target="_blank" rel="noopener noreferrer">Hacer Pedido</a>
                         </div>
