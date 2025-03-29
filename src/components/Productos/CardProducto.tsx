@@ -68,7 +68,7 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                         </button>
 
                         {/* Contenido del modal */}
-                        <img className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] object-cover rounded-md mb-4" src={mainImage} alt={nombre} />
+                        <img className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] object-cover rounded-xl md:mb-4" src={mainImage} alt={nombre} />
                         <div className='flex-center flex-col md:pl-4'>
                             <div className='flex-around w-full md:w-[600px]'>
                                 <h2 className="text-lg md:text-4xl font-bold mb-2">{nombre}</h2>
