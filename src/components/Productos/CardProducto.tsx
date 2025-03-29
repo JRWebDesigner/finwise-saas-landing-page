@@ -38,7 +38,7 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
         <>
             {/* Card */}
             <motion.div
-                className="flex flex-col bg-gray-100 w-[220px] md:w-[250px] h-[380px] p-6 rounded-2xl shadow-md hover:bg-primary hover:text-white hover:scale-110 duration-300 break-words whitespace-norma"
+                className="flex flex-col bg-gray-100 w-[220px] md:w-[330px] h-[380px] p-6 rounded-2xl shadow-md hover:bg-primary hover:text-white hover:scale-110 duration-300 break-words whitespace-normal"
                 variants={entryProd}
                 initial="offscreen"
                 whileInView="onscreen"
@@ -46,7 +46,7 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                 onClick={toggleModal} // Abre el modal al hacer clic en la tarjeta
             >
                 <img className="max-h-[230px] object-contain" src={mainImage} alt={nombre} />
-                <div className="flex max-h-[100px] justify-center font-semibold text-sm">
+                <div className="flex max-h-[100px] justify-center font-semibold text-sm md:text-lg">
                     <h3>{nombre}</h3>
                 </div>
                 <span className="flex justify-center items-center text-sm">{marca}</span>
