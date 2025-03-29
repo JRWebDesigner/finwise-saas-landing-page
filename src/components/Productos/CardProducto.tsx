@@ -50,7 +50,7 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                     <h3>{nombre}</h3>
                 </div>
                 <span className="flex justify-center items-center text-sm">{marca}</span>
-								<button className='px-3 py-2 rounded-3xl border-2 border-white mt-2 hover:bg-secondary duration-300'>Ver mas informacion </button>
+								<button className='text-sm md:text-lg px-3 py-2 rounded-3xl border-2 border-white mt-2 hover:bg-secondary duration-300 truncate'>Más detalles</button>
 							</motion.div>
             {/* Modal */}
             {isModalOpen && (
