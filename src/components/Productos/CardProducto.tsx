@@ -46,7 +46,7 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                 onClick={toggleModal} // Abre el modal al hacer clic en la tarjeta
             >
                 <img className="max-h-[230px] object-contain" src={mainImage} alt={nombre} />
-                <div className="flex max-h-[100px] justify-center font-semibold text-lg">
+                <div className="flex max-h-[100px] justify-center font-semibold text-sm">
                     <h3>{nombre}</h3>
                 </div>
                 <span className="flex justify-center items-center text-sm">{marca}</span>
