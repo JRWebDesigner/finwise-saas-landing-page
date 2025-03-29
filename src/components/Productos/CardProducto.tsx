@@ -15,7 +15,7 @@ export const entryProd = {
         transition: {
             type: "spring",
             bounce: 0.2,
-            duration: 1.5,
+            duration: 0.7,
         },
     },
 };
