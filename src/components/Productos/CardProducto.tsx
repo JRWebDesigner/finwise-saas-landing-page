@@ -73,7 +73,7 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                             <div className='flex-around w-full md:w-[600px]'>
                                 <h2 className="text-lg md:text-4xl font-bold mb-2">{nombre}</h2>
                             </div>
-                            <div className="flex-center w-full">
+                            <div className="flex-center w-full my-2">
                                 <span className="text-sm text-gray-500 text-primary">{marca}</span>
                             </div>
                             <div className='overflow-y-auto w-full max-h-[200px] md:max-h-[400px] p-4 prose prose-xl'>
