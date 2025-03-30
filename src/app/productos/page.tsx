@@ -15,7 +15,7 @@ export default async function ProductsPage(){
   return(
     <>
 
-      <ul className="flex-around flex-wrap gap-6">
+      <ul className="flex-center flex-wrap gap-8 my-4 mx-2">
         {products.map((product) => (
           <li key={product._id}>
             <CardProducto
