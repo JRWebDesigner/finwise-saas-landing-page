@@ -71,10 +71,11 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                         <img className="w-[200px] h-[200px] md:w-[50%] md:max-w-[400px] md:h-auto max-h-[80%] object-cover rounded-xl md:mb-4" src={mainImage} alt={nombre} />
                         <div className='flex-center flex-col md:pl-4'>
                             <div className='flex-around w-full md:w-[600px]'>
-                                <h2 className="text-lg md:text-xl font-bold mb-2">{nombre}</h2>
+                                <h2 className="text-lg md:text-2xl font-bold mb-2">{nombre}</h2>
                             </div>
                             <div className="flex-center w-full my-2">
                                 <span className="text-sm text-gray-500 text-primary">{marca}</span>
+                            </div>
                             </div>
                             <div className='overflow-y-auto w-full max-h-[200px] md:max-h-[40%] prose prose-xl'>
                                 <h3>Descripción:</h3>
@@ -82,7 +83,6 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                             </div>
                             <a className='bg-[#035AC7] p-2 rounded-3xl text-white text-bold text-lg font-bold w-[170px] flex-center hover:scale-105 duration-200' href={`https://wa.me/59168071168?text=Deseo%20el%20producto%20${nombre}`} target="_blank" rel="noopener noreferrer">Hacer Pedido</a>
                         </div>
-                    </div>
                 </div>
             )}
         </>
