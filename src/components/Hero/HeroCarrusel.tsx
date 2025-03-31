@@ -39,7 +39,7 @@ export default function HeroCarrusel(){
             <span>
               Instrumentos y dispositivos de las marcas más reconocidas y confiables.
             </span>
-                <img className='w-[29%] md:w-[24%]' src="/images/h3565-family-600-x-600--removeebg-preview.png" alt="microscopio" />
+                <img className='w-[29%] md:w-[24%]' src="/images/h3565-family-600-x-600--removebg-preview.png" alt="microscopio" />
             </div>
           </SwiperSlide>
           <SwiperSlide >
