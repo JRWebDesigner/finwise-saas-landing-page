@@ -54,11 +54,11 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
 							</motion.div>
             {/* Modal */}
             {isModalOpen && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+                <div className="fixed inset-0 flex-center bg-black bg-opacity-50 z-50"
 								role="dialog"
 								aria-hidden={!isModalOpen}
 								>
-                    <div className="bg-white w-[95%] h-[90vh] p-6 rounded-lg shadow-lg relative flex flex-wrap justify-around items-center">
+                    <div className="bg-white w-[95%] h-[90vh] p-6 rounded-lg shadow-lg relative flex flex-wrap md:grid grid-cols-2 justify-around items-center">
                         {/* Botón para cerrar el modal */}
                         <button
                             className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
@@ -68,6 +68,7 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                         </button>
 
                         {/* Contenido del modal */}
+                        <div className='flex flex-col flex-wrap md:grid md:grid-cols-2 gap-4'>
                         <img className="w-[200px] h-[200px] md:w-[50%] md:max-w-[400px] md:h-auto max-h-[80%] object-cover rounded-xl md:mb-4" src={mainImage} alt={nombre} />
                         <div className='flex-center flex-col md:pl-4'>
                             <div className='flex-around w-full md:w-[600px]'>
@@ -83,6 +84,8 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                             </div>
                             <a className='bg-[#035AC7] p-2 rounded-3xl text-white text-bold text-lg font-bold w-[170px] flex-center hover:scale-105 duration-200' href={`https://wa.me/59177793456?text=Deseo%20el%20producto%20${nombre}`} target="_blank" rel="noopener noreferrer">Hacer Pedido</a>
                         </div>
+                        </div>
+                        
                 </div>
             )}
         </>
