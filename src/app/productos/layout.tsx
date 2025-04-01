@@ -17,7 +17,7 @@ export const metadata:Metadata = {
         <div className="flex-around flex-col gap-6 md:grid md:grid-cols-[0.2fr_2fr]">
           <div className='border-r-2 border-primary'>
             <h2 className='text-center font-bold text-xl'>Categorias</h2>
-            <nav className='pl-4 duration-300 text-blue-500 underline flex justify-center items-start flex-col'>
+            <nav className='pl-4 duration-300 text-blue-500 underline flex justify-items-start items-start flex-col h-screen'>
               <GetCategorys />
             </nav>
           </div>
