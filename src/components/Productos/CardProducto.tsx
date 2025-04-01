@@ -73,7 +73,7 @@ export default function CardProducto({ nombre, mainImage, marca, descripcion }: 
                             <div className="flex-center w-full my-2">
                                 <span className="text-sm text-gray-500 text-primary">{marca}</span>
                             </div>
-                            <div className="overflow-y-auto w-full max-h-[200px] md:max-h-[40%] prose prose-xl">
+                            <div className="overflow-y-auto w-full max-h-[200px] md:max-h-[300px] prose prose-xl">
                                 <h3>Descripción:</h3>
                                 <PortableText value={descripcion} />
                             </div>
