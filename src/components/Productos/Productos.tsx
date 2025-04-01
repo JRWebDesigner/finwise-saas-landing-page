@@ -1,6 +1,10 @@
-'use client' 
-import {motion} from 'framer-motion'
-import CardProducto from './CardProducto'
+'use client';
+import { useEffect, useState } from 'react';
+import { client } from '@/sanity/lib/client';
+import { allProductsQuery } from '@/sanity/lib/queries';
+import { PortableTextBlock } from 'next-sanity';
+import { motion } from 'framer-motion';
+import CardProducto from './CardProducto';
 
 export const subtitleAn = {
     offscreen: {
@@ -16,48 +20,50 @@ export const subtitleAn = {
             duration: 1.2,
         }
     },
-}
-export default function Productos(){
-    return(
-        <>
-        <motion.div
-            className="text-center text-3xl font-bold "
-            variants={subtitleAn}
-            initial="offscreen"
-            whileInView="onscreen"
-      	    viewport={{ once: true }}
-        >
-            <h2>
-                Nuestros productos destacados
-            </h2>
-        </motion.div>
-        <div className='flex justify-start md:justify-center items-center gap-10 my-10 w-[90%] mx-auto overflow-x-auto overflow-y-hidden'>
-            <CardProducto 
-            
-                mainImage={'./images/miicroscopio.png'}
-                nombre={'Prueba producto'}
-                
-                marca={'marca uno'}
-                descripcion={[]}
-            />
-            <CardProducto 
-            
+};
 
-                mainImage={'./images/miicroscopio.png'}
-                nombre={'Prueba producto'}
-                
-                marca={'marca dos'}
-                descripcion={[]}
-            />
-            <CardProducto 
-            
-                mainImage={'./images/miicroscopio.png'}
-                nombre={'Prueba producto'}
-                
-                marca={'marca tres'}
-                descripcion={[]}
-            />
-        </div>
+interface ProductType {
+    _id: string;
+    nombre: string;
+    mainImage: string;
+    marca: string;
+    descripcion: PortableTextBlock[];
+}
+
+export default function Productos() {
+    const [products, setProducts] = useState<ProductType[]>([]);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            const limitedQuery = `${allProductsQuery}[0...4]`; // Limitar a 4 productos
+            const fetchedProducts = await client.fetch(limitedQuery);
+            setProducts(fetchedProducts);
+        };
+        fetchProducts();
+    }, []);
+
+    return (
+        <>
+            <motion.div
+                className="text-center text-3xl font-bold"
+                variants={subtitleAn}
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true }}
+            >
+                <h2>Nuestros productos destacados</h2>
+            </motion.div>
+            <div className="flex justify-start md:justify-center items-center gap-10 my-10 w-[100%] mx-auto overflow-x-auto overflow-y-hidden">
+                {products.map((product) => (
+                    <CardProducto
+                        key={product._id}
+                        nombre={product.nombre}
+                        mainImage={product.mainImage}
+                        marca={product.marca}
+                        descripcion={product.descripcion}
+                    />
+                ))}
+            </div>
         </>
-    )
+    );
 }
