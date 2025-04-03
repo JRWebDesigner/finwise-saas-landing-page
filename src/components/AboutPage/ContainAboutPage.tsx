@@ -44,7 +44,7 @@ export default function ContainAboutPage(){
 							<h2 className='font-bold text-xl md:text-2xl'>Mision</h2>
 							<p>
 								Somos una empresa privada importadora y distribuidora de equipos, consumibles y reactivos químicos de laboratorio con cobertura a lo largo de todo el país, para satisfacer las necesidades en el sector industrial, analítico y de investigación, dando una atención personalizada a nuestros clientes en las áreas de venta, postventa y asesoría técnica, gracias a que contamos un equipo de trabajo especializado y altamente comprometido.
-								
+							</p>	
 						</div>
 						<div>
 							<h2 className='font-bold text-xl md:text-2xl'>Vision</h2>
