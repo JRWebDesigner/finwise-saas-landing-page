@@ -8,8 +8,7 @@ const ContactPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-semibold text-primary mb-4">Información de Contacto</h2>
-                <p className="text-gray-600 mb-4">Estamos ubicados en la ciudad de La Paz, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, fugit. Sunt blanditiis provident error sequi..</p>
-                <ul className="flex justify-center items-center flex-col">
+                 <ul className="flex justify-center items-center flex-col">
                     <li className="w-[90%]">
                        <a href="https://maps.app.goo.gl/AxrVpc1vW1mtBNYE7"><strong>LA PAZ: </strong> AV. LA PAZ Y CALLE L. DE LA VEGA NO 3420 Z/BALLIVIAN</a>
                     </li>
