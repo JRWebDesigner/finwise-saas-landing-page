@@ -14,8 +14,8 @@ export const metadata:Metadata = {
 		<>
       <Hero />
       <div className="max-w-screen-2xl mx-auto mt-20">
-        <div className="flex-around flex-col gap-6 md:grid md:grid-cols-[0.2fr_2fr]">
-          <div className='border-r-2 border-primary h-screen '>
+        <div className="flex-around flex-col gap-6 md:grid md:grid-cols-[0.2fr_2fr] place-items-start">
+          <div className='border-r-2 border-primary '>
             <h2 className='text-center font-bold text-xl'>Categorias</h2>
             <nav className='pl-4 duration-300 text-blue-500 underline flex justify-center items-center flex-col '>
               <GetCategorys />
