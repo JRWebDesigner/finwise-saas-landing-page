@@ -11,11 +11,20 @@ const ContactPage: React.FC = () => {
                 <p className="text-gray-600 mb-4">Estamos ubicados en la ciudad de La Paz, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, fugit. Sunt blanditiis provident error sequi..</p>
                 <ul className="flex justify-center items-center flex-col">
                     <li className="w-[90%]">
-                       <a href="https://maps.app.goo.gl/AxrVpc1vW1mtBNYE7"><strong>Dirección: </strong> Calle xxxxxx, <br /> xxxxx</a>
+                       <a href="https://maps.app.goo.gl/AxrVpc1vW1mtBNYE7"><strong>LA PAZ: </strong> AV. LA PAZ Y CALLE L. DE LA VEGA NO 3420 Z/BALLIVIAN</a>
                     </li>
+                    <li className="w-[90%]">
+                       <a href="https://maps.app.goo.gl/AxrVpc1vW1mtBNYE7"><strong>SANTA CRUZ: </strong> CALLE QUIJARRO Y CALLE 6 DE AGOSTO NO. 557 GALERIA PLATINUM - 1ER. ANILLO</a>
+                    </li>
+                    
                     <li className="w-[90%]">
                         <a href="">
                             <strong>Celular:</strong> +591 77793456
+                        </a>
+                    </li>
+ <li className="w-[90%]">
+                        <a href="">
+                            <strong>Celular:</strong> +591 68149201
                         </a>
                     </li>
                     <li className="w-[90%]">
