@@ -21,14 +21,14 @@ const titleVariants: Variants = {
 export default function Title(){
     return(
         <motion.div 
-        className="text-4xl md:text-5xl text-center w-[80%] text-white md:w-1/2 mx-auto font-bold" 
+        className="relative z-20 text-4xl md:text-5xl text-center w-[80%] text-white md:w-1/2 mx-auto font-bold" 
         variants={titleVariants} 
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true }}
       >
         <h1>
-          <strong>n-innovations biosupply bol. ltda. BOL</strong> importadora de insumos de laboratorio en general
+          <strong>n-innovations biosupply bol. ltda.</strong> importadora de insumos de laboratorio en general
         </h1>
       </motion.div>
     )
