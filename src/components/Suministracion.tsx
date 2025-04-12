@@ -53,7 +53,7 @@ export default function Suministracion(){
     return(
 		<div className="grid place-items-center my-32 md:my-20">
 			<div className=' flex flex-wrap justify-around items-center gap-10'>
-				<h2 className='font-semibold text-xl md:text-2xl text-center'> En N-INNOVATIONS BIOSUPPLY BOL <br className="hidden md:inline-block" /> suministramos material para: 
+				<h2 className='font-semibold text-xl md:text-2xl text-center'> En n-innovations biosupply bol. ltda. BOL <br className="hidden md:inline-block" /> suministramos material para: 
 				</h2>
 				<div className="hidden md:inline h-[30vh] border-2 border-primary" />
 				<motion.div

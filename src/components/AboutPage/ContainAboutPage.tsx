@@ -28,7 +28,7 @@ export default function ContainAboutPage(){
 						>
 						<h2 className='font-bold text-2xl md:text-3xl'>Éxito Competitivo</h2>
 						<p>
-							El éxito competitivo de N-INNOVATIONS BIOSUPPLY BOL. LTDA. no sólo se debe a la integración de la organización como un todo, sino a la especialización que tiene cada área para la realización adecuada de sus actividades y la percepción ante las necesidades futuras de nuestros clientes. Nuestro capital humano a su vez, cuenta con el conocimiento técnico necesario para ofrecer la solución que los clientes requieren de forma eficiente y adecuada para la toma de decisiones.
+							El éxito competitivo de n-innovations biosupply bol. ltda. BOL. LTDA. no sólo se debe a la integración de la organización como un todo, sino a la especialización que tiene cada área para la realización adecuada de sus actividades y la percepción ante las necesidades futuras de nuestros clientes. Nuestro capital humano a su vez, cuenta con el conocimiento técnico necesario para ofrecer la solución que los clientes requieren de forma eficiente y adecuada para la toma de decisiones.
 						</p>
 						</motion.div>
 					  <motion.div 
@@ -39,7 +39,7 @@ export default function ContainAboutPage(){
 						>
 						<h2 className='font-bold text-2xl md:text-3xl'>Competitividad</h2>
 						<p>
-La experiencia de N-INNOVATIONS BIOSUPPLY BOL. LTDA.  en el estudio de productos de alta tecnología siempre avanzados ha permitido encontrar el mejor compromiso entre alto rendimiento y costo para obtener un precio de mercado competitivo pero aún con un gran rendimiento de los productos que importamos.
+La experiencia de n-innovations biosupply bol. ltda. BOL. LTDA.  en el estudio de productos de alta tecnología siempre avanzados ha permitido encontrar el mejor compromiso entre alto rendimiento y costo para obtener un precio de mercado competitivo pero aún con un gran rendimiento de los productos que importamos.
 						</p>
 						</motion.div>
 				</section>
@@ -85,7 +85,7 @@ Gracias a nuestra perseverancia y visión contamos con los recursos para satisfa
 							<h2 className='font-bold text-xl md:text-2xl'>Política de Calidad
 </h2>
 							<p>
-							N-INNOVATIONS BIOSUPPLY BOL. LTDA. es una empresa orientada a la entrega de productos de calidad y a la logística eficiente, desde el proveedor hasta su entrega, satisfaciendo las expectativas de sus clientes y de las partes interesadas, cumpliendo con los requisitos legales y reglamentarios aplicables al producto.
+							n-innovations biosupply bol. ltda. BOL. LTDA. es una empresa orientada a la entrega de productos de calidad y a la logística eficiente, desde el proveedor hasta su entrega, satisfaciendo las expectativas de sus clientes y de las partes interesadas, cumpliendo con los requisitos legales y reglamentarios aplicables al producto.
 							</p>
 								 
 						</div>

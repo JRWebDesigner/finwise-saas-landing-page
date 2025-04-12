@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import GetCategorys from "@/components/Productos/GetCategorys";
 import Hero from "@/components/ProductsPage/Hero";
 export const metadata:Metadata = {
-	title: "n-innovations biosupply - Productos",
-	description: "Conoce la variedad de productos que tenemos para tu laboratorio - solo en n-innovations biosupply",
+	title: "n-innovations biosupply bol. ltda. - Productos",
+	description: "Conoce la variedad de productos que tenemos para tu laboratorio - solo en n-innovations biosupply bol. ltda.",
   };
   export default function Layout({
     children,

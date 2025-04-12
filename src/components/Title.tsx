@@ -28,7 +28,7 @@ export default function Title(){
         viewport={{ once: true }}
       >
         <h1>
-          <strong>N-INNOVATIONS BIOSUPPLY BOL</strong> importadora de insumos de laboratorio en general
+          <strong>n-innovations biosupply bol. ltda. BOL</strong> importadora de insumos de laboratorio en general
         </h1>
       </motion.div>
     )
