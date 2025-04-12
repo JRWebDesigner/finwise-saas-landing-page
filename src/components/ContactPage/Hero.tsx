@@ -28,6 +28,7 @@ const Hero: React.FC = () => {
             <div className="absolute left-0 right-0 bottom-0 backdrop-blur-[2px] h-40 bg-gradient-to-b from-transparent via-[#8981ffad] to-[rgb(255,255,255)]">
             </div>
             <motion.div
+            className='relative z-20'
                 variants={subtitleAn}
                 initial="offscreen"
                 whileInView="onscreen"
