@@ -13,24 +13,25 @@ export default function Layout({
   return (
     <>
       <Hero />
-      <div className="max-w-screen-2xl mx-auto mt-20">
-        {/* Contenedor principal modificado */}
-        <div className="flex flex-col md:grid md:grid-cols-[0.2fr_2fr] gap-6">
-          {/* Sidebar de categorías - Fijo en móvil, normal en desktop */}
-          <div className="md:sticky md:top-20 md:h-[calc(100vh-5rem)] md:overflow-y-auto md:border-r-2 md:border-primary w-full bg-white z-10 fixed top-0 left-0 right-0 shadow-md md:shadow-none md:relative md:bg-transparent px-4 py-2 md:py-0">
-            <h2 className='text-center font-bold text-xl sticky top-0 bg-white py-2 md:bg-transparent md:static'>Categorias</h2>
-            <nav className='px-6 duration-300 text-blue-500 underline flex flex-wrap justify-center gap-2 md:flex-col md:items-start md:justify-start'>
-              <GetCategorys />
-            </nav>
-          </div>
-          
+      <div className="relative max-w-screen-2xl mx-auto mt-20">
+        <div className="flex flex-col lg:flex-row gap-6 px-5">
+          {/* Sidebar con categorías */}
+          <aside className="w-full lg:w-64 lg:flex-shrink-0">
+            <div className="sticky top-24 bg-white rounded-lg shadow-sm border p-4">
+              <h3 className="text-lg font-semibold mb-4 text-gray-800 text-cetner">Categorías</h3>
+              <div className="space-y-2">
+                <GetCategorys />
+              </div>
+            </div>
+          </aside>
+
           {/* Contenido principal */}
-          <div className='px-5 mt-16 md:mt-0'> {/* mt-16 para compensar el header fijo en móvil */}
-            <h2 className="text-2xl font-bold text-center">
-              Nuestros productos
-            </h2>
-            {children}
-          </div>
+          <main className="flex-1 min-w-0">
+            <div className="mt-16 md:mt-0">
+              <h2 className="text-2xl font-bold text-center mb-8">Nuestros productos</h2>
+              {children}
+            </div>
+          </main>
         </div>
       </div>
     </>
